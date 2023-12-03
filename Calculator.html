@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="input">
+        <div class="main">
+            <button class="txt" onclick="Clear()">AC</button>
+            <button class="txt" onclick="Delete()">DEL</button>
+            <button class="operator"  onclick="storeData('%')">%</button>
+            <button class="operator"  onclick="storeData('/')">/</button>
+        </div>
+        <div>
+            <button  onclick="storeData('7')">7</button>
+            <button  onclick="storeData('8')">8</button>
+            <button  onclick="storeData('9')">9</button>
+            <button class="operator" onclick="storeData('*')">*</button>
+        </div>
+        <div>
+            <button  onclick="storeData('4')">4</button>
+            <button  onclick="storeData('5')">5</button>
+            <button  onclick="storeData('6')">6</button>
+            <button class="operator"  onclick="storeData('-')">-</button>
+        </div>
+        <div>
+            <button  onclick="storeData('3')">3</button>
+            <button  onclick="storeData('2')">2</button>
+            <button  onclick="storeData('1')">1</button>
+            <button class="operator"  onclick="storeData('+')">+</button>
+        </div>
+        <div>
+            <button  onclick="storeData('00')">00</button>
+            <button  onclick="storeData('0')">0</button>
+            <button  onclick="storeData('.')">.</button>
+            <button class="equalBtn"   onclick="Calculate()">=</button>
+        </div>
+    </div>
+<script src="Calculator.js"></script>
+</body>
+
+</html>
